@@ -103,7 +103,7 @@ html {
   .featured-issue {
     position: relative;
     z-index: 4;
-    background-color: whitesmoke;
+    background-color: #FFE9E3;
     border-left: 13px solid #EF404E;
     border-radius: 4px 0px 0px 4px;
     margin: -50px 5% 0px 20%;
@@ -115,7 +115,20 @@ html {
     position: relative;
     z-index: 1;
     width: 100%;
+    animation: fadeInAnimation ease-in-out .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
   }
+  
+  @keyframes fadeInAnimation {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+  
 
  .issue-description {
     font-family: 'Georama', sans-serif;
@@ -146,6 +159,10 @@ html {
     }
     .issue-column-left {
       min-height: 360px;
+    }
+
+    .aclu-footer-title {
+      font-size: 1.8rem;
     }
   }
 
