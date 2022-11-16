@@ -14,7 +14,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.typekit.net/wmn3jsm.css">
 
@@ -38,9 +38,33 @@
 
 <section class="issue-container">
 <div>
-<img src="images/capital-punishment.jpg" alt="capital punishment" class="featured-image topicCapital" id="capital">
-<img src="images/civil-liberties.jpg" alt="civil liberties" class="featured-image hidden topicCivil" id="civil">
-<img src="images/criminal-law-reform-issue-image.jpg" alt="criminal law reform" class="featured-image hidden topicCriminal" id="criminal">
+<!-- Images for all issues include 
+    .feature-image for style, 
+    .hidden to hide/unhide, and 
+    .topicTemplate to match theTopic button ID and class in JS (which is not needed in stylesheet)-->
+
+<img src="images/capital-punishment.jpg" alt="illustration of capital punishment" class="featured-image topicCapital">
+<img src="images/civil-liberties.jpg" alt="illustration of civil liberties" class="featured-image hidden topicCivil">
+<img src="images/criminal-law-reform-issue-image.jpg" alt="illustration of criminal law reform" class="featured-image hidden topicCriminal">
+<img src="images/disability-issue-image.jpg" alt="illustration of disability rights" class="featured-image hidden topicDisability">
+<img src="images/free-speech-issue-image.jpg" alt="illustration of free speech" class="featured-image hidden topicFree">
+<img src="images/hiv-issue-image.jpg" alt="illustration of HIV" class="featured-image hidden topicHIV">
+<img src="images/human-rights-issue-image.jpg" alt="illustration of human rights" class="featured-image hidden topicHuman">
+<img src="images/immigration-rights-issue-image.jpg" alt="illustration of immigrants' rights" class="featured-image hidden topicImmigrants">
+<img src="images/juvenile-justice-issue-image.jpg" alt="illustration of juvenile justice" class="featured-image hidden topicJuvenile">
+<img src="images/lgbtq-issue-image.jpg" alt="illustration of LGBTQ rights" class="featured-image hidden topicLGBTQ">
+<img src="images/national-security-issue-image.jpg" alt="illustration of national security" class="featured-image hidden topicNational">
+<img src="images/prisoners-rights-issue-image.jpg" alt="illustration of prisoners' rights" class="featured-image hidden topicPrisoners">
+<img src="images/privacy-and-technology-issue-image.jpg" alt="illustration of privacy and technology" class="featured-image hidden topicPrivacy">
+<img src="images/racial-justice-issue-image.jpg" alt="illustration of racial justice" class="featured-image hidden topicRacial">
+<img src="images/religious-liberty-issue-image.jpg" alt="illustration of religious liberty" class="featured-image hidden topicReligious">
+<img src="images/reproductive-freedom-issue-image.jpg" alt="illustration of reproductive freedom" class="featured-image hidden topicReproductive">
+<img src="images/smart-justice-issue-image.jpg" alt="illustration of smart justice" class="featured-image hidden topicSmart">
+<img src="images/voting-rights-issue-image.jpg" alt="illustration of voting rights" class="featured-image hidden topicVoting">
+<img src="images/womens-rights-issue-image.jpg" alt="illustration of women's rights" class="featured-image hidden topicWomen">
+
+<!-- Corresponding descriptions are matched by topicTemplate class -->
+
 <article class="featured-issue topicCapital">
     <p class="issue-description">The Capital Punishment Project works toward the repeal of the death penalty in the United States through strategic litigation, advocacy, public education, and training programs for capital defense teams.</p>
 </article>
@@ -50,36 +74,88 @@
 <article class="featured-issue hidden topicCriminal">
     <p class="issue-description">The Criminal Law Reform Project seeks to end harsh policies and racial inequities in the criminal justice system.</p>
 </article>
+<article class="featured-issue hidden topicDisability">
+    <p class="issue-description">Striving for an America free of discrimination against people with disabilities, where they are valued, integrated members of society with full access to education, homes, health care, jobs, voting, and beyond.</p>
+</article>
+<article class="featured-issue hidden topicFree">
+    <p class="issue-description">Protecting free speech means protecting a free press, the democratic process, diversity of thought, and so much more. The ACLU has worked since 1920 to ensure that freedom of speech is protected for everyone.</p>
+</article>
+<article class="featured-issue hidden topicHIV">
+    <p class="issue-description">The ACLU uses litigation, lobbying, public education, and organizing at the state and federal levels to fight discrimination against people living with HIV.</p>
+</article>
+<article class="featured-issue hidden topicHuman">
+    <p class="issue-description">The ACLU Human Rights Program (HRP) is dedicated to holding the United States accountable to international human rights laws and standards as well as the rights guaranteed by the U.S. Constitution.</p>
+</article>
+<article class="featured-issue hidden topicImmigrants">
+    <p class="issue-description">The fundamental constitutional protections of due process and equal protection embodied in our Constitution and Bill of Rights apply to every person, regardless of immigration status.</p>
+</article>
+<article class="featured-issue hidden topicJuvenile">
+    <p class="issue-description">Youth are still developing, so as a result society treats kids and adults differently in several contexts, such as driving and serving in the military. Yet in the criminal justice system, we treat youth as adults.</p>
+</article>
+<article class="featured-issue hidden topicLGBTQ">
+    <p class="issue-description">The ACLU works to ensure that lesbian, gay, bisexual, transgender and queer people can live openly without discrimination and enjoy equal rights, personal autonomy, and freedom of expression and association.</p>
+</article>
+<article class="featured-issue hidden topicNational">
+    <p class="issue-description">The ACLU’s National Security Project is dedicated to ensuring that U.S. national security policies and practices are consistent with the Constitution, civil liberties, and human rights.</p>
+</article>
+<article class="featured-issue hidden topicPrisoners">
+    <p class="issue-description">The National Prison Project is dedicated to ensuring that our nation’s prisons, jails, and detention centers comply with the Constitution, domestic law, and human rights principles.</p>
+</article>
+<article class="featured-issue hidden topicPrivacy">
+    <p class="issue-description">The ACLU works to expand the right to privacy, increase the control individuals have over their personal information, and ensure civil liberties are enhanced rather than compromised by technological innovation.</p>
+</article>
+<article class="featured-issue hidden topicRacial">
+    <p class="issue-description">The ACLU Racial Justice Program aims to preserve and extend constitutionally guaranteed rights to people who have historically been denied their rights on the basis of race.</p>
+</article>
+<article class="featured-issue hidden topicReligious">
+    <p class="issue-description">The ACLU strives to safeguard the First Amendment’s guarantee of religious liberty by ensuring that laws and governmental practices neither promote religion nor interfere with its free exercise.</p>
+</article>
+<article class="featured-issue hidden topicReproductive">
+    <p class="issue-description">The ACLU works to ensure that every person can make the best decision for themselves and their family about whether and when to have a child without undue political interference.</p>
+</article>
+<article class="featured-issue hidden topicSmart">
+    <p class="issue-description">The ACLU Campaign for Smart Justice is an unprecedented, multiyear effort to reduce the U.S. jail and prison population by 50% and to challenge racism in the criminal legal system.</p>
+</article>
+<article class="featured-issue hidden topicVoting">
+    <p class="issue-description">Voting is the cornerstone of our democracy and the fundamental right upon which all our civil liberties rest. The ACLU works to protect and expand Americansʼ freedom to vote.</p>
+</article>
+<article class="featured-issue hidden topicWomen">
+    <p class="issue-description">Today, gender bias continues to create huge barriers for many women. Ongoing struggles include ensuring equal economic opportunities, educational equity, and an end to gender-based violence.</p>
+</article>
 </div> 
 <div class="issue-button-box">
+
+<!-- Corresponding buttons are matched by IDs that match the class topicTemplate -->
+
 <p>Learn about what's happening across the most pressing civil liberties issues of our time, and what you can do.</p>
 <button class="issue-button selected-button topicCapital" id="topicCapital">Capital Punishment</button>
 <button class="issue-button topicCivil" id="topicCivil">Civil Liberties</button>
 <button class="issue-button topicCriminal" id="topicCriminal">Criminal Law Reform</button>
-<button class="issue-button">Disability Rights</button>
-<button class="issue-button">Free Speech</button>
-<button class="issue-button">HIV</button>
-<button class="issue-button">Human Rights</button>
-<button class="issue-button">Immigrants’ Rights</button>
-<button class="issue-button">Juvenile Justice</button>
-<button class="issue-button">LGBTQ Rights</button>
-<button class="issue-button">National Security</button>
-<button class="issue-button">Prisoners’ Rights</button>
-<button class="issue-button">Privacy & Technology</button>
-<button class="issue-button">Racial Justice</button>
-<button class="issue-button">Religious Liberty</button>
-<button class="issue-button">Reproductive Freedom</button>
-<button class="issue-button">Smart Justice</button>
-<button class="issue-button">Voting Rights</button>
-<button class="issue-button">Women’s Rights</button>
+<button class="issue-button topicDisability" id="topicDisability">Disability Rights</button>
+<button class="issue-button topicFree" id="topicFree">Free Speech</button>
+<button class="issue-button topicHIV" id="topicHIV">HIV</button>
+<button class="issue-button topicHuman" id="topicHuman">Human Rights</button>
+<button class="issue-button topicImmigrants" id="topicImmigrants">Immigrants’ Rights</button>
+<button class="issue-button topicJuvenile" id="topicJuvenile">Juvenile Justice</button>
+<button class="issue-button topicLGBTQ" id="topicLGBTQ">LGBTQ Rights</button>
+<button class="issue-button topicNational" id="topicNational">National Security</button>
+<button class="issue-button topicPrisoners" id="topicPrisoners">Prisoners’ Rights</button>
+<button class="issue-button topicPrivacy" id="topicPrivacy">Privacy & Technology</button>
+<button class="issue-button topicRacial" id="topicRacial">Racial Justice</button>
+<button class="issue-button topicReligious" id="topicReligious">Religious Liberty</button>
+<button class="issue-button topicReproductive" id="topicReproductive">Reproductive Freedom</button>
+<button class="issue-button topicSmart" id="topicSmart">Smart Justice</button>
+<button class="issue-button topicVoting" id="topicVoting">Voting Rights</button>
+<button class="issue-button topicWomen" id="topicWomen">Women’s Rights</button>
 </div>
 </section>
 
 
-<footer class="aclu-footer">
-
-<h3>American Civil Liberties Union</h3>
-
+<footer>
+<h1  class="aclu-footer-title">American Civil Liberties Union</h1>
+<div class="aclu-footer">
+<p class="aclu-footer-credit">Concept Work by <a href="https://www.dtylerbush.com/" target="_blank">Tyler Bush</a> —<br> Web Design and Development (HTML5/CSS/JS)</p>
+</div>
 </footer>
 
 <script  src="js/script.js"></script>

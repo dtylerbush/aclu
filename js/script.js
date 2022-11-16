@@ -38,7 +38,7 @@ function displayIssue(e) {
 
     for (var i = 0; i < issueButton.length; i++){
 
-        // if button has class show it / else hide it
+        // if button has class add selected-button class / else remove it
 
         if (issueButton[i].classList.contains(theTopic)){
             issueButton[i].classList.add('selected-button');
@@ -56,31 +56,6 @@ for (var i = 0; i < issueButton.length; i++){
  issueButton[i].addEventListener('click', displayIssue)
 }
 
-
-
-    // selectIssue ( "capitalButton" , "capitalDesc", "capital" );
-    // selectIssue ( "civilButton" , "civilDesc", "civil" );
-    // selectIssue ( "criminalButton" , "criminalDesc", "criminal" );
-
-
-// loop to add .hidden to others .featured
-
-//     for (var i = 0; i < issueFeatured.length; i++){
-    
-//         // Add a click listener on each button
-//         issueFeatured[i].addEventListener('click',function(){
-            
-//             // add the hidden class
-//             for (var q = 0; q < issueFeatured.length; q++){
-//                 issueFeatured[q].classList.add('hidden');
-//             }
-    
-//           // remove the hidden class on the one clicked on
-//             this.classList.remove('hidden');
-//     })
-// }
-
-// loop to add hidden to .featured-image
 
 
 })

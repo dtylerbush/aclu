@@ -4,29 +4,35 @@ html {
   font-size: 10px;
   line-height: 1.5;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-h1 {
+/* h1 {
   font-size: 10px;
   line-height: 1.5;
-}
+} */
 
 /* *{  */
 /* border: red solid 1px; */
 /* } */
 
-body {
+/* body {
     font-size: 10px;
     line-height: 1.5;
+  } */
+
+  h1 {
+    color: white;
+    font-family: p22-mackinac-pro, serif;
+    font-weight: 400;
+    font-size: 2.8rem;
   }
   
   p {
-    margin-block-start: 0px; /* added because of TOP ISSUES */
+    margin-block-start: 0px; /* added because of TOP ISSUES alignment */
     margin-block-end: 0px;
   }
 
-  /* a {
-  } */
   
   .aclu-container {
     margin: -15% 0% 0% -3%;
@@ -91,7 +97,6 @@ body {
   }
 
   .featured-issue {
-    /* display: inline-block; */
     position: relative;
     z-index: 4;
     background-color: whitesmoke;
@@ -176,15 +181,31 @@ body {
   background: #EF404E;
 }
 
-.aclu-footer h3 {
-  color: white;
-  font-family: p22-mackinac-pro, serif;
-  font-weight: 400;
-  font-size: 2.8rem;
+
+.aclu-footer-title {
   text-align: center;
-  padding: 40px 20px;
+  padding: 40px 20px 0px 20px;
 }
 
+.aclu-footer {
+  background-color: #474569;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 30px 30px 50px 30px;
+}
+
+.aclu-footer-credit {
+  color: white;
+  font-family: p22-mackinac-pro, serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.aclu-footer a {
+  color: white;
+}
 
   
 @media screen and (min-width:1400px) {
