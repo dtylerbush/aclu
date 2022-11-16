@@ -1,7 +1,9 @@
 # ACLU
 
-Concept Work by Tyler Bush — Web Design and Development (HTML5/CSS/JS)
+https://dtylerbush.github.io/aclu/
 
-Copy and Illustrations taken from https://www.aclu.org/
+Concept work by Tyler Bush — web design and development (HTML5/CSS/JS)
+
+Copy and illustrations from https://www.aclu.org/
 
 Learn more about me at https://www.dtylerbush.com/
