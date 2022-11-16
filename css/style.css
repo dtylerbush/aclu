@@ -96,6 +96,10 @@ html {
     max-width: 1500px;
   }
 
+  .issue-column-left {
+    min-height: 550px;
+  }
+
   .featured-issue {
     position: relative;
     z-index: 4;
@@ -125,19 +129,41 @@ html {
     display: none;
   }
 
-
   @media screen and (max-width:768px) {
+
     .issue-container {
       grid-template-columns: 1fr;
     }
+
     .top-issues {
       position: absolute;
       font-size: 5rem;
       margin-left: -120px;
     }
 
-    .issue-description-box {
-      margin: -50px 30px 0px 30px;
+    .issue-description {
+      font-size: 1.5rem;
+    }
+    .issue-column-left {
+      min-height: 390px;
+    }
+  }
+
+
+
+  @media screen and (min-width:769px) and (max-width:1075px) {
+    .issue-container {
+      grid-template-columns: 1fr;
+    }
+
+    .top-issues {
+      position: absolute;
+      font-size: 5rem;
+      margin-left: -120px;
+    }
+
+    .issue-column-left {
+      min-height: 610px;
     }
   }
 
@@ -190,13 +216,10 @@ html {
 .aclu-footer {
   background-color: #474569;
   height: 100px;
-  width: 100%;
   display: flex;
-  align-items: flex-end;
-  padding: 30px 30px 50px 30px;
-}
-
-.aclu-footer-credit {
+  align-items:flex-end;
+  justify-content: center;
+  padding: 30px;
   color: white;
   font-family: p22-mackinac-pro, serif;
   font-size: 1.4rem;
@@ -225,12 +248,16 @@ html {
     max-width: 850px;
   }
 
+  .mission {
+    padding-bottom: 200px;
+  }
+
   .issue-container {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .mission {
-    padding-bottom: 200px;
+  .issue-column-left {
+    min-height: 580px;
   }
 }
