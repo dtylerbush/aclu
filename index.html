@@ -20,13 +20,13 @@
 
 </head>
 
-<!-- testing update 20230322 -->
 
 <body>
 
 <header class="aclu-container">
-<h1 class="aclu">ACLU</h1>
+<h1 class="aclu"><a href="index.html">ACLU</a></h1>
 </header>
+
 
 <section class="mission-container">
 <p class="mission">The ACLU dares to create a more perfect union — beyond one person, party, or side. Our mission is to realize this promise of the United States Constitution for all and expand the reach of its guarantees.</p>
@@ -39,11 +39,11 @@
 <section class="issue-container">
 <div class="issue-column-left">
 <!-- Images for all issues include 
-    .feature-image for style, 
-    .hidden to hide/unhide, and 
-    .topicTemplate to match theTopic button ID and class in JS (which is not needed in stylesheet)-->
+    .featured-image for style, 
+    .hidden to hide/unhide-->
 
-<img src="images/capital-punishment.jpg" alt="illustration of capital punishment" class="featured-image topicCapital">
+<img src="images/ACLU_01_intro.gif" alt="illustration of the US constitution" class="featured-image topicIntro">
+<img src="images/capital-punishment.jpg" alt="illustration of capital punishment" class="featured-image hidden topicCapital">
 <img src="images/civil-liberties.jpg" alt="illustration of civil liberties" class="featured-image hidden topicCivil">
 <img src="images/criminal-law-reform-issue-image.jpg" alt="illustration of criminal law reform" class="featured-image hidden topicCriminal">
 <img src="images/disability-issue-image.jpg" alt="illustration of disability rights" class="featured-image hidden topicDisability">
@@ -65,7 +65,7 @@
 
 <!-- Corresponding descriptions are matched by topicTemplate class -->
 
-<article class="featured-issue topicCapital">
+<article class="featured-issue hidden topicCapital">
     <p class="issue-description">The Capital Punishment Project works toward the repeal of the death penalty in the United States through strategic litigation, advocacy, public education, and training programs for capital defense teams.</p>
 </article>
 <article class="featured-issue hidden topicCivil">
@@ -128,7 +128,7 @@
 <!-- Corresponding buttons are matched by IDs that match the class topicTemplate -->
 
 <p>Learn about what's happening across the most pressing civil liberties issues of our time, and what you can do.</p>
-<button class="issue-button selected-button topicCapital" id="topicCapital">Capital Punishment</button>
+<button class="issue-button topicCapital" id="topicCapital">Capital Punishment</button>
 <button class="issue-button topicCivil" id="topicCivil">Civil Liberties</button>
 <button class="issue-button topicCriminal" id="topicCriminal">Criminal Law Reform</button>
 <button class="issue-button topicDisability" id="topicDisability">Disability Rights</button>
@@ -154,7 +154,7 @@
 <footer>
 <h1  class="aclu-footer-title">American Civil Liberties Union</h1>
 <div class="aclu-footer">
-<p>Concept Work by <a href="https://www.dtylerbush.com/" target="_blank">Tyler Bush</a> — Web Design and Development (HTML5/CSS/JS). Copy and Illustrations from <a href="https://www.aclu.org/" target="_blank">ACLU</a>.</p>
+<p>Concept Work by <a href="https://www.tylerbush.com/" target="_blank">Tyler Bush</a> — Web Design and Development (HTML5/CSS/JS). Copy and Illustrations from <a href="https://www.aclu.org/" target="_blank">ACLU</a>.</p>
 </div>
 </footer>
 
