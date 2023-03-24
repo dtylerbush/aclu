@@ -59,7 +59,7 @@ border: red solid 1px;
 
 
   .mission-container {
-    margin-top: -31.5%;
+    margin-top: -32.5%;
     padding: 0% 20%;
   }
 
@@ -258,7 +258,7 @@ border: red solid 1px;
 @media screen and (min-width:1400px) {
 
   .aclu-container {
-    margin: -220px 0px 40px -50px;
+    margin: -220px 0px 0px -80px;
   }
   
   .aclu {
