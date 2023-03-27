@@ -63,8 +63,9 @@ border: red solid 1px;
   }
 
   .mission-container {
-    margin-top: -400px;
-    padding: 0% 20%;
+    min-height: fit-content;
+    margin: -30% 20% 0% 20%;
+    padding-bottom: 200px;
   }
 
   .mission {
@@ -75,7 +76,6 @@ border: red solid 1px;
     font-size: 2.5rem;
     text-align: center;
     letter-spacing: 0em;
-    padding-bottom: 23%;
   }
 
 
@@ -219,12 +219,13 @@ border: red solid 1px;
   /* Responsive: mobile, less than 768px */
   @media screen and (max-width:768px) {
 
-    .mission-container {
-      margin-top: 0px;
-    }
 
     .issue-container {
       grid-template-columns: 1fr;
+    }
+
+    .mission-container {
+      padding-bottom: 50px;
     }
 
     .top-issues {
@@ -247,10 +248,26 @@ border: red solid 1px;
   }
 
 
+
+/* adding one more screen to reduce akward space */
+
+@media screen and (min-width:1076px) and (max-width:1310px) {
+
+  .mission-container {
+    padding-bottom: 110px; /* from padding-bottom: 200px; */
+  }
+}
+
+
+
   /* Responsive: between mobile and desktop */
   @media screen and (min-width:769px) and (max-width:1075px) {
     .issue-container {
       grid-template-columns: 1fr;
+    }
+
+    .mission-container {
+      padding-bottom: 50px; /* from padding-bottom: 110px; */
     }
 
     .top-issues {
@@ -277,16 +294,14 @@ border: red solid 1px;
     font-size: 600px;
   }
 
+
   .mission-container {
-    margin-top: -470px;
+    margin-top: -430px;
     margin-left: auto;
     margin-right: auto;
     max-width: 850px;
   }
 
-  .mission {
-    padding-bottom: 200px;
-  }
 
   .issue-container {
     margin-left: auto;
