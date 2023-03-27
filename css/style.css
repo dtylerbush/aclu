@@ -12,14 +12,20 @@ html {
   line-height: 1.5;
 } */
 
-/* *{ 
-border: red solid 1px;
-} */
-
 /* body {
     font-size: 10px;
     line-height: 1.5;
   } */
+
+
+/* This is to turn on red outlines to troubleshoot div spacing */
+
+  /* *{ 
+border: red solid 1px;
+} */
+
+
+ /*  See Responsive CSS below, this is desktop (between tablet and wide screen) */
 
   h1 {
     color: white;
@@ -55,8 +61,6 @@ border: red solid 1px;
     text-decoration: none;
     color: #474569;
   }
-
-
 
   .mission-container {
     margin-top: -400px;
@@ -149,48 +153,6 @@ border: red solid 1px;
     display: none;
   }
 
-  @media screen and (max-width:768px) {
-
-    .issue-container {
-      grid-template-columns: 1fr;
-    }
-
-    .top-issues {
-      position: absolute;
-      font-size: 5rem;
-      margin-left: -120px;
-    }
-
-    .issue-description {
-      font-size: 1.5rem;
-    }
-    .issue-column-left {
-      min-height: 360px;
-    }
-
-    .aclu-footer-title {
-      font-size: 1.8rem;
-    }
-  }
-
-
-
-  @media screen and (min-width:769px) and (max-width:1075px) {
-    .issue-container {
-      grid-template-columns: 1fr;
-    }
-
-    .top-issues {
-      position: absolute;
-      font-size: 5rem;
-      margin-left: -120px;
-    }
-
-    .issue-column-left {
-      min-height: 610px;
-    }
-  }
-
   .issue-button-box {
     padding: 30px 30px 0px 30px;
     display: flex;
@@ -254,7 +216,57 @@ border: red solid 1px;
   color: white;
 }
 
-  
+  /* Responsive: mobile, less than 768px */
+  @media screen and (max-width:768px) {
+
+    .mission-container {
+      margin-top: 0px;
+    }
+
+    .issue-container {
+      grid-template-columns: 1fr;
+    }
+
+    .top-issues {
+      position: absolute;
+      font-size: 5rem;
+      margin-left: -120px;
+    }
+
+    .issue-description {
+      font-size: 1.5rem;
+    }
+
+    .issue-column-left {
+      min-height: 300px;
+    }
+
+    .aclu-footer-title {
+      font-size: 1.8rem;
+    }
+  }
+
+
+  /* Responsive: between mobile and desktop */
+  @media screen and (min-width:769px) and (max-width:1075px) {
+    .issue-container {
+      grid-template-columns: 1fr;
+    }
+
+    .top-issues {
+      position: absolute;
+      font-size: 5rem;
+      margin-left: -120px;
+    }
+
+    .issue-column-left {
+      min-height: 610px;
+    }
+  }
+
+ 
+
+  /* Responsive: wide screen, more than 1400px */
 @media screen and (min-width:1400px) {
 
   .aclu-container {
